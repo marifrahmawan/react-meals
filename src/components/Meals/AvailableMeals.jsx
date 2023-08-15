@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from '../UI/Card';
 
 import classes from './AvailableMeals.module.css';
@@ -39,6 +38,7 @@ const AvailableMeals = () => {
           {DUMMY_MEALS.map((meal) => {
             return (
               <MealItem
+                id={meal.id}
                 key={meal.id}
                 name={meal.name}
                 description={meal.description}
